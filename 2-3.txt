@@ -1,0 +1,36 @@
+/* first solution
+
+let string = "";
+for (let n = 1; n <=8; n++) {
+  if (n % 2 !== 0) {
+    string = string + " # # # #\n"
+  }
+  if (n % 2 == 0) {
+    string = string + "# # # # \n"
+  }
+}
+console.log(string)   
+
+end first solution
+*/
+
+// second solution
+
+let string = "";
+let length = Number(prompt("Enter length"));
+let width = Number(prompt("Enter width"));
+
+for (let n = 1; n <= length; n++) {
+  for (let m = 1; m <= width; m++) {
+    if (n % 2 !== 0 && m % 2 !== 0) {
+      string += " "}
+    if (n % 2 !== 0 && m % 2 == 0) {
+      string += "#"}
+    if (n % 2 == 0 && m % 2 !== 0) {
+      string += "#"}
+    if (n % 2 == 0 && m % 2 == 0) {
+      string += " "}
+  }
+  string += "\n";
+}
+console.log(string) 
